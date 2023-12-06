@@ -82,10 +82,6 @@ public class Animal : MonoBehaviour
         }
     }
 
-    public float GetHunger()
-    {
-        return hunger;
-    }
     protected void MoveAround()
     {
         transform.position = new Vector3(transform.position.x + moveSpeed * XMovingDirection, transform.position.y + moveSpeed * YMovingDirection, 0);
@@ -230,5 +226,19 @@ public class Animal : MonoBehaviour
         hungerSlider.value = 1 - hunger;
         thirstSlider.value = 1 - thirst;
         happinessSlider.fillAmount = happiness;
+    }
+
+
+    public float GetHunger()
+    {
+        return hunger;
+    }
+    public float GetThirst()
+    {
+        return thirst;
+    }
+    public float GetHappiness()
+    {
+        return happiness;
     }
 }
