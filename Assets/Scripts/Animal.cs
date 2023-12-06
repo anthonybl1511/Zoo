@@ -82,6 +82,10 @@ public class Animal : MonoBehaviour
         }
     }
 
+    public float GetHunger()
+    {
+        return hunger;
+    }
     protected void MoveAround()
     {
         transform.position = new Vector3(transform.position.x + moveSpeed * XMovingDirection, transform.position.y + moveSpeed * YMovingDirection, 0);
