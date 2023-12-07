@@ -6,7 +6,6 @@ public class Crocodile : Animal
     {
         base.Start();
 
-        animalName = "Crocodile";
         age = 5;
         hunger = 0;
         thirst = 0;
@@ -15,7 +14,7 @@ public class Crocodile : Animal
         moveSpeed = 0.0005f;
 
         thirstRate = 0.1f;
-        hungerRate = 0.1f;
+        hungerRate = 0.2f;
         tirednessRate = 0.3f;
     }
 

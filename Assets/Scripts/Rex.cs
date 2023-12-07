@@ -6,7 +6,6 @@ public class Rex : Animal
     {
         base.Start();
 
-        animalName = "T-Rex";
         age = 1000;
         hunger = 0;
         thirst = 0;

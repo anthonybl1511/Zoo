@@ -6,7 +6,6 @@ public class KillerWhale : Animal
     {
         base.Start();
 
-        animalName = "T-Rex";
         age = 100;
         hunger = 0;
         thirst = 0;

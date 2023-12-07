@@ -6,7 +6,6 @@ public class Crab : Animal
     {
         base.Start();
 
-        animalName = "Crab";
         age = 1;
         hunger = 0;
         thirst = 0;

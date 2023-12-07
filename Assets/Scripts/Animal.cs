@@ -40,8 +40,10 @@ public class Animal : MonoBehaviour
 
     public void Start()
     {
-        InvokeRepeating("HungerIncrease", 0, 10);
-        InvokeRepeating("ThirstIncrease", 0, 5);
+        animalName = gameObject.name;
+
+        InvokeRepeating("HungerIncrease", 10, 10);
+        InvokeRepeating("ThirstIncrease", 5, 5);
 
         XMovingDirection = Random.Range(0, 2) * 2 - 1;
         YMovingDirection = Random.Range(0, 2) * 2 - 1;
@@ -151,13 +153,6 @@ public class Animal : MonoBehaviour
         {
             thirst -= 0.1f;
         }
-        else
-        {
-            if (happiness > 0)
-            {
-                happiness -= 0.2f;
-            }
-        }
     }
 
     protected void Chill()
@@ -229,6 +224,10 @@ public class Animal : MonoBehaviour
     }
 
 
+    public string GetName()
+    {
+        return animalName;
+    }
     public float GetHunger()
     {
         return hunger;
@@ -240,5 +239,29 @@ public class Animal : MonoBehaviour
     public float GetHappiness()
     {
         return happiness;
+    }
+    public float GetTiredness()
+    {
+        return tiredness;
+    }
+    public void SetName(string name)
+    {
+        animalName = name;
+    }
+    public void SetHunger(float hunger)
+    {
+        this.hunger = hunger;
+    }
+    public void SetThirst(float thirst)
+    {
+        this.thirst = thirst;
+    }
+    public void SetHappiness(float happiness)
+    {
+        this.happiness = happiness;
+    }
+    public void SetTiredness(float tiredness)
+    {
+        this.tiredness = tiredness;
     }
 }
