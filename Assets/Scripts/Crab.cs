@@ -13,7 +13,7 @@ public class Crab : Animal
         happiness = 1;
         moveSpeed = 0.0015f;
 
-        thirstRate = 0.15f;
+        thirstRate = 0.12f;
         hungerRate = 0.05f;
         tirednessRate = 0.05f;
     }
