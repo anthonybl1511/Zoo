@@ -21,7 +21,10 @@ public class SaveSystem : MonoBehaviour
     public void Save()
     {
         Animal[] animals = FindObjectsOfType(typeof(Animal)) as Animal[];
+        foreach (Animal animal in animals)
+        {
 
+        }
 
         string json = JsonUtility.ToJson(animals);
         Debug.Log(json);
