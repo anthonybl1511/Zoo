@@ -9,7 +9,7 @@ public class SaveSystem : MonoBehaviour
     void Start()
     {
         instance = this;
-        Load();
+        Invoke("Load", 0.02f);
     }
 
     public void Load()
